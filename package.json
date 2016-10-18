@@ -7,7 +7,7 @@
     "pretest": "npm run lint",
     "test": "npm run test:run",
     "test:run": "mocha",
-    "test:watch": "npm run test **/*.js -- -w",
+    "test:watch": "npm run test:run -- -w",
     "lint": "eslint ."
   },
   "repository": {
@@ -21,11 +21,10 @@
   },
   "homepage": "https://github.com/nsmeds/greeting-app#readme",
   "devDependencies": {
+    "eslint": "^3.8.1",
     "mocha": "^3.1.2"
   },
   "dependencies": {
-    "eslint": "^3.8.1",
-    "node": "0.0.0",
     "node-emoji": "^1.4.1"
   }
 }
